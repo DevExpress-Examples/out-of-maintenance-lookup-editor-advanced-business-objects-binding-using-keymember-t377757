@@ -37,6 +37,7 @@ namespace Lookup_KeyMember {
             riLookUp.DisplayMember = "Name";
             riLookUp.DataSource = categories;
 
+            gridControl1.RepositoryItems.Add(riLookUp);
             gridView1.Columns["Category"].ColumnEdit = riLookUp;
         }
     }
